@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".cours.AddCoursActivity">
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrer un cours"
+        android:textSize="24dp"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:id="@+id/libelle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Libellé"
+        android:textSize="20dp"
+        android:layout_below="@+id/texttitle"
+        android:inputType="textPersonName"
+        />
+    <TextView
+        android:id="@+id/filiere_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choisir un filière"
+        android:textSize="24dp"
+        android:layout_below="@+id/libelle"
+        android:layout_marginTop="10dp"
+        />
+    <Spinner
+        android:id="@+id/spinner_filiere"
+        android:layout_width="402dp"
+        android:layout_height="45dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/filiere_choice"
+     />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_filiere"
+        android:text="Enregistrer"
+        android:textSize="24dp" />
+</RelativeLayout>

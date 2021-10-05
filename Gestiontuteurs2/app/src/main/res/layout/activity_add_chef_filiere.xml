@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".chef_filiere.AddChefFiliereActivity">
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrer un nom complet"
+        android:textSize="24dp"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom Complet"
+        android:textSize="20dp"
+        android:layout_below="@+id/texttitle"
+        android:inputType="textPersonName"
+        />
+    <TextView
+        android:id="@+id/filiere_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choisir un filière"
+        android:textSize="24dp"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="10dp"
+        />
+    <Spinner
+        android:id="@+id/spinner_filiere_chef"
+        android:layout_width="402dp"
+        android:layout_height="45dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/filiere_choice"
+        />
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_filiere_chef"
+        android:text="Enregistrer"
+        android:textSize="24dp" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".HomeActivity">
+    <Button
+        android:id="@+id/tuteur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Espace Tuteur"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/filiere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Filiére"
+        android:layout_below="@id/tuteur"/>
+    <Button
+        android:id="@+id/cours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Cours"
+        android:layout_below="@id/filiere"/>
+    <Button
+        android:id="@+id/chef_filiere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Chef filére"
+        android:layout_below="@id/cours"/>
+</RelativeLayout>
